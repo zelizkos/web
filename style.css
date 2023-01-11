@@ -1,0 +1,177 @@
+.reft{
+    color: rgb(213, 243, 78);
+    animation-name: reft-a;
+}
+.rkt2{
+    text-align: center;
+    color: white;
+    font-size: min(max(11px, 4vw), 14px);
+    font-size: large;
+}
+.rkt2:hover{
+    color: black;
+    transition: 0.2s;
+    font-size: min(max(14px, 4vw), 17px);
+    font-size: larger;
+}
+.rkt1{
+    font-size: min(max(14px, 4vw), 19px);
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+.rkt1:hover{
+    transition: 0.2s;
+    color: black;
+    font-size: min(max(17px, 4vw), 12px);
+    font-size: larger;
+}
+.reference{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.karta{
+    height: 200px;
+    background-color: rgb(213, 243, 78);
+    border-radius: 8px;
+    animation-name: karta-a;
+}
+.ifa{
+    justify-content: center;
+    display: flex;
+}
+iframe{
+    max-width: 1200px;
+    max-height: auto;
+    min-width: fit-content;
+    min-height: auto;
+}
+/* MENU */
+@media screen and (max-width: 650px) {
+    .telt{
+        text-decoration: none;
+        color: white;
+    }
+    .telt:hover{
+        color: black;
+        text-decoration: overline;
+        transition: 0.2s;
+    }
+    .tel{
+        visibility: hidden;
+    }
+    .tel.visible{
+        visibility: visible;
+        position: absolute;
+        background-color: rgb(213, 243, 78);
+        margin-top: 2%;
+    }
+    .menu-tel{
+        visibility: visible;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10%;
+    }
+    .pc{
+        visibility: hidden;
+    }
+    .vyhoda-o{
+        margin-left: 0px;
+    }
+    }
+@media screen and (min-width: 651px) {
+    .tel{
+        visibility: hidden;
+    }
+    .menu-tel{
+        visibility: hidden;
+    }
+    .vyhoda-o{
+        margin-left: 30px;
+    }
+
+    }
+.pcl{
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 0.7%;
+    color: white;
+    font-size: min(max(16px, 4vw), 25px);  
+}
+.pcl:hover{
+    transition: 0.4s;
+    color: black;
+    text-decoration: overline;
+}
+.pc{
+    justify-content: center;
+    display: flex;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    height: 8%;
+    background-color: rgb(213, 243, 78);
+    width: 100%;
+}
+/*Konec menu*/
+.vyhoda-o{
+    min-width: 140px;
+    min-height: 140px;
+    max-width: 350px;
+    max-height: 350px;
+}
+.vyhody{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: min(max(25px, 4vw), 50px);
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+h2{
+    font-size: min(max(16px, 4vw), 28px);
+    color: black;
+    text-align: center;
+}
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: -1;
+animation-name: text1;
+animation-duration: 6s;
+}
+@keyframes text1{
+0% {left: -5%;}
+100% {left: 50%;}
+}
+.container {
+position: relative;
+text-align: center;
+z-index: -1;
+}
+.img-1{
+    width: 101%;
+    right: 0.5%;
+    height: 15%;
+    max-height: 1020px;
+    min-height: auto;
+    position: relative;
+    z-index: -3;
+    margin-top: -1%;
+
+}
+body{
+    font-family: sans-serif;
+}
